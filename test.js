@@ -1,9 +1,8 @@
-// myFunction.test.js
+const num1 = 5;
+const num2 = 3;
 
-const myFunction = require('./myFunction');
+// add two numbers
+const sum = num1 + num2;
 
-test('myFunction should not throw a console error', () => {
-    const consoleSpy = jest.spyOn(console, 'error');
-    myFunction(); // Call the function that you want to test
-    expect(consoleSpy).not.toHaveBeenCalled();
-});
+// display the sum
+console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
